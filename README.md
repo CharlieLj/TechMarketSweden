@@ -17,5 +17,5 @@ Follow these steps to open and run the project locally:
 ## 4. Update the Database
 - Open the **Package Manager Console** (under **Tools** > **NuGet Package Manager** > **Package Manager Console**).
 - Run the following commands to update the database:
-  Add-Migration UpdateData
-  Update-Database
+- Add-Migration UpdateData
+- Update-Database

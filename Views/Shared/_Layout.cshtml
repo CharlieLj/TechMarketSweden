@@ -1,0 +1,56 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>@ViewData["Title"] - TechMarketSweden</title>
+    <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
+    <link rel="stylesheet" href="~/css/header.css" asp-append-version="true" />
+    <link rel="stylesheet" href="~/css/hero.css" asp-append-version="true" />
+    <link rel="stylesheet" href="~/css/content.css" asp-append-version="true" />
+    <link rel="stylesheet" href="~/css/checkoutform.css" asp-append-version="true" />
+    <link rel="stylesheet" href="~/css/footer.css" asp-append-version="true" />
+    <link rel="stylesheet" href="~/TechMarketSweden.styles.css" asp-append-version="true" />
+</head>
+<body>
+
+    <header>
+        <nav class="navbar">
+            <div class="navbar-content">
+                <!-- Logo som bild -->
+                <a class="navbarlogo" href="/Home/Index">
+                    <img src="/images/LogoNoBG.png" alt="TechMarketSweden Logo" class="logo" />
+                </a>
+                <div class="navbar-links">
+                    <ul class="nav-list">
+                        <li class="nav-item">
+                            <a class="nav-link" href="/Home/Index">Startsidan</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="/Product/Index">Produktlista</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="/Cart/Index">Varukorg</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <div>
+        <main role="main">
+            @RenderBody()
+        </main>
+    </div>
+
+    <footer class="footer">
+        <div class="footer-content">
+            &copy; 2025 - TechMarketSweden - <a asp-area="" asp-controller="Home" asp-action="Privacy">Privacy</a>
+        </div>
+    </footer>
+    <script src="~/lib/jquery/dist/jquery.min.js"></script>
+    <script src="~/js/site.js" asp-append-version="true"></script>
+    @await RenderSectionAsync("Scripts", required: false)
+</body>
+</html>

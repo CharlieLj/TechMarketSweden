@@ -1,0 +1,76 @@
+﻿/* Logotypstilar */
+.logo {
+    height: 100px; /* Sätt höjden på logotypen till 40px (justera efter behov) */
+    width: 100px; /* Håll proportionerna på logotypen intakta (bredder justeras automatiskt) */
+}
+
+/* Navbar (navigeringsfält) */
+.navbar {
+    background-color: black; /* Mörkgrå bakgrundsfärg på navbaren (#333 är en mörk grå nyans) */
+    padding: 10px 20px; /* Lägger till 10px vertikalt och 20px horisontellt padding i navbaren */
+}
+
+/* Innehåll i navbaren */
+.navbar-content {
+    display: flex; /* Använd Flexbox för att ordna innehållet */
+    justify-content: space-between; /* Dela upp innehållet till båda sidor (för tex. logo och meny) */
+    align-items: center; /* Centrerar innehållet vertikalt */
+}
+
+/* Navbar-brand (logotyplänk) */
+.navbarlogo {
+    color: #fff; /* Vit färg på texten i logotypen */
+    text-decoration: none; /* Ta bort understrykningen från länken */
+    display: flex; /* Gör navbar-brand till en flex-container (för att justera logotypen om det behövs) */
+    align-items: center; /* Centrerar innehållet vertikalt i navbaren */
+}
+
+/* Navbar-länkar (för att hålla menyobjekten) */
+.navbar-links {
+    display: flex; /* Använd Flexbox för att ordna länkarna horisontellt */
+}
+
+/* Listan med menyalternativ */
+.nav-list {
+    display: flex; /* Flexbox för att ordna listobjekt horisontellt */
+    list-style-type: none; /* Ta bort punkterna från listan */
+    padding: 0; /* Ta bort standardpadding från listan */
+    margin: 0; /* Ta bort standardmarginaler från listan */
+}
+
+/* Ett enskilt menyobjekt */
+.nav-item {
+    margin-right: 20px; /* Lägger till 20px mellan varje menyalternativ */
+}
+
+/* Länkar i menyn */
+.nav-link {
+    color: #fff; /* Vit färg på texten för menylänkar */
+    font-size: 20px; /* Sätt fontstorleken på 16px */
+    text-decoration: none; /* Ta bort understrykningen från länkar */
+    padding: 8px 16px; /* Lägg till 8px vertikal och 16px horisontell padding för att göra länkarna klickbara och större */
+    display: inline-block; /* Gör så att länken beter sig som en inline-block */
+}
+
+    /* Hover-effekt för menylänkar */
+    .nav-link:hover {
+        background-color: #555; /* Sätt bakgrundsfärgen till en mörkare grå (#555) när användaren hovrar över länken */
+        border-radius: 4px; /* Lägg till en liten rundning på hörnen av länken */
+    }
+
+/* Responsiv meny (ändra layouten för mindre skärmar, max bredd 768px) */
+@media (max-width: 768px) {
+    .navbar-content {
+        flex-direction: column; /* Ordna innehållet vertikalt istället för horisontellt */
+        align-items: flex-start; /* Justera innehållet till vänster */
+    }
+
+    .nav-list {
+        flex-direction: column; /* Ordna länkarna vertikalt istället för horisontellt */
+        width: 100%; /* Länkarna ska ta upp hela bredden */
+    }
+
+    .nav-item {
+        margin-bottom: 10px; /* Lägg till ett mellanrum mellan varje menyobjekt */
+    }
+}

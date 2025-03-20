@@ -1,0 +1,31 @@
+﻿@model IEnumerable<Product>
+
+<!-- Hero Section -->
+<div class="hero-container">
+    <!-- Adjust background as needed -->
+    <div class="hero-content">
+        <h2 class="hero-heading">Produkter</h2>
+
+        <div class="hero-text">
+            <p>Utforska vårt sortiment och hitta dina favoriter idag!</p>
+        </div>
+
+    </div>
+</div>
+
+
+<div class="container">
+
+    <div class="products">
+
+        @foreach (var product in Model)
+        {
+        <div class="product-item">
+            <img src="~/images/@product.ImageUrl" width="200" />
+            <h3>@product.Name - @product.Price kr</h3>
+                <a href="/Cart/AddToCart/@product.Id" class="product-button">Lägg i varukorgen</a>
+        </div>
+        }
+
+    </div>
+</div>

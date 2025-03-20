@@ -1,0 +1,10 @@
+/* Generella stilar för body och html */
+body, html {
+    margin: 0; /* Ta bort alla standardmarginaler */
+    padding: 0; /* Ta bort alla standardpadningar */
+    font-family: Arial, sans-serif; /* Använd Arial eller sans-serif som teckensnitt */
+    min-height: 100%; /* Se till att kroppen täcker hela höjden på sidan */
+    display: flex; /* Använd Flexbox för layouten */
+    flex-direction: column; /* Gör så att elementen (som footer) hamnar under varandra i en kolumn */
+}
+

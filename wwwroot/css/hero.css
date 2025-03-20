@@ -1,0 +1,61 @@
+﻿
+.hero-container {
+    background: url('/images/smartwatchhero.jpg') no-repeat center center/cover;
+    width: 100%;
+    padding-top: 40px;
+    padding-bottom: 40px;
+    border-bottom-right-radius: 1.5rem;
+    border-bottom-left-radius: 1.5rem;
+}
+
+.hero-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.hero-heading {
+    font-size: 72px;
+    color: white;
+    text-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5); /* Lätt skugga */
+}
+
+.hero-text {
+    font-size: 24px;
+    color: white;
+    font-weight: 700;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3); /* Lätt skugga */
+}
+
+.hero-buttons {
+    color: white; /* Ser till att texten alltid är vit */
+    padding-top: 40px;
+}
+
+.hero-button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 24px;
+    color: white; /* Ser till att texten alltid är vit */
+    border-radius: 9999px; /* Full rundning */
+    border: 3px solid #4B5563; /* Vit kantlinje */
+    padding: 0.75rem 1.5rem;
+    background-color: #4B5563; /* Motsvarar Tailwind's bg-gray-900 */
+    text-decoration: none; /* Tar bort understrykning */
+    transition: background-color 0.3s ease; /* Smidig hover-effekt */
+}
+
+    /* Hover-effekt */
+    .hero-button:hover {
+        background-color: #1F2937;
+    }
+
+    /* Förhindrar att texten ändras vid besök, klick eller fokus */
+    .hero-button:visited,
+    .hero-button:active,
+    .hero-button:focus {
+        color: white;
+    }
+

@@ -1,0 +1,13 @@
+﻿@model List<CartItem>
+
+
+<div class="container">
+    <h2>Varukorg</h2>
+    @foreach (var item in Model)
+    {
+        <div>
+            <h3>@item.Product.Name - @item.Quantity st</h3>
+        </div>
+    }
+    <a href="/Cart/Checkout" class="product-button">Till kassan</a>
+</div>

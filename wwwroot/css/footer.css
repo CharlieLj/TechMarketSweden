@@ -1,0 +1,13 @@
+﻿/* Footer (sidfot) */
+.footer {
+    background-color: black; /* Ljusgrå bakgrundsfärg för footern (#f8f8f8 är en ljus grå nyans) */
+    color: white; /* Vit text */
+    padding: 20px 0; /* Lägg till 20px padding vertikalt för att ge lite utrymme runt texten i footern */
+    text-align: center; /* Centrerar innehållet i footern */
+    width: 100%; /* Se till att footern täcker hela bredden */
+}
+
+/* För att säkerställa att footern är längst ner om sidan inte går att skrolla */
+footer {
+    margin-top: 550px; /* Detta trycker ner footern längst ner på sidan, oavsett hur mycket innehåll det finns */
+}

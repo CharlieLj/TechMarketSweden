@@ -1,0 +1,103 @@
+﻿.container {
+    max-width: 100%;
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+    padding-top: 1.5rem;
+    padding-bottom: 1.5rem;
+    margin-left: auto;
+    margin-right: auto;
+    box-sizing: border-box;
+}
+
+.products {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* 3 produkter per rad */
+    gap: 20px; /* Mellanrum mellan produkterna */
+    text-align: center; /* Centrerar texten */
+}
+
+.product-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px;
+    background-color: #e5e7eb;
+    border-radius: 1.5rem;
+}
+
+.product-button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white; /* Ser till att texten alltid är vit */
+    border-radius: 9999px; /* Full rundning */
+    border: 3px solid #4B5563;
+    padding: 0.75rem 1.5rem;
+    background-color: #4B5563; /* Motsvarar Tailwind's bg-gray-900 */
+    text-decoration: none; /* Tar bort understrykning */
+    transition: background-color 0.3s ease; /* Smidig hover-effekt */
+}
+
+    /* Hover-effekt */
+.product-button:hover {
+    background-color: #1F2937;
+}
+
+    /* Förhindrar att texten ändras vid besök, klick eller fokus */
+.product-button:visited,
+.product-button:active,
+.product-button:focus {
+    color: white;
+}
+
+
+.news {
+    display: flex;
+    flex-direction: column;
+    gap: 20px; /* Mellanrum mellan produkterna */
+    text-align: center; /* Centrerar texten */
+}
+
+.news-items {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 1.25rem;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.news-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px;
+    background-color: #e5e7eb;
+    border-radius: 1.5rem;
+    gap: 10px;
+    padding: 40px;
+}
+
+.faq-section {
+    padding: 20px;
+    background-color: #e5e7eb;
+    border-radius: 1.5rem;
+}
+
+.faq-item {
+    margin-bottom: 15px;
+}
+
+    .faq-item h3 {
+        font-size: 18px;
+        color: black;
+        cursor: pointer;
+        margin-bottom: 5px;
+    }
+
+    .faq-item p {
+        font-size: 16px;
+        color: black;
+        margin: 0;
+        padding-left: 20px;
+    }

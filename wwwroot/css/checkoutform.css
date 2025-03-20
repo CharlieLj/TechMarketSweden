@@ -1,0 +1,10 @@
+﻿.checkoutform {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px;
+    background-color: #e5e7eb;
+    border-radius: 1.5rem;
+    gap: 20px; /* Mellanrum mellan produkterna */
+    text-align: center; /* Centrerar texten */
+}

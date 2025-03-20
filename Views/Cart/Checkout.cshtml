@@ -1,0 +1,28 @@
+﻿
+
+<div class="container">
+    <h2>Kassa</h2>
+    <form method="post" action="/Cart/CompleteCheckout">
+        <div class="checkoutform">
+            <div>
+                <label for="name">Namn:</label>
+                <input type="text" id="name" name="name" required>
+            </div>
+            <div>
+                <label for="phone">Telefonnummer:</label>
+                <input type="tel" id="phone" name="phone" required>
+            </div>
+            <div>
+                <label for="address">Leveransadress:</label>
+                <textarea id="address" name="address" required></textarea>
+            </div>
+            <div>
+                <label for="payment">Betalsätt:</label>
+                <select id="payment" name="payment">
+                    <option value="faktura">Faktura</option>
+                </select>
+            </div>
+            <button type="submit" class="product-button">Slutför köp</button>
+        </div>
+    </form>
+</div>
